@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-ng-app="ct" data-ng-strict-di lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trade Confirmation | Currency Transfer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="lib/material-design-lite/material.min.css" rel="stylesheet">
+    <link href="lib/animate.css/animate.css" rel="stylesheet">
+    <link href="app.compiled.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header is-upgraded">
+    <div data-ct-header></div>
+    <main class="mdl-layout__content mdl-color--grey-100">
+        <div style="width:80vw;margin:auto;padding:20px 0;" class="ct-content">
+            <div data-ui-view></div>
+        </div>
+    </main>
+    <div data-ct-footer></div>
+</div>
+
+
+<!-- TODO:REQUIRE JS MODULE LOADING -->
+<script src="lib/angular/angular.js"></script>
+
+<!--<script src="lib/angular-aria/angular-aria.js"></script>-->
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="lib/angular-animate/angular-animate.js"></script>
+<script src="lib/angular-sanitize/angular-sanitize.js"></script>
+<script src="lib/angular-translate/angular-translate.js"></script>
+<script src="lib/material-design-lite/material.min.js"></script>
+<!--<script src="lib/angular-mocks/angular-mocks.js"></script>-->
+
+<script src="app.mdl.js"></script>
+<script src="app.routes.js"></script>
+<script src="common/common.mdl.js"></script>
+<script src="core/trader/trader.mdl.js"></script>
+<script src="core/trade/trade.mdl.js"></script>
+
+<script src="common/header/header.mdl.js"></script>
+<script src="common/footer/footer.mdl.js"></script>
+<script src="core/trader/sidemenu/sidemenu.mdl.js"></script>
+<script src="core/trade/confirmation/confirmation.mdl.js"></script>
+<script src="config/routes.conf.js"></script>
+<script src="config/dev-properties.const.js"></script>
+
+<script src="common/header/header.drv.js"></script>
+<script src="common/footer/footer.drv.js"></script>
+<script src="core/trader/sidemenu/sidemenu.drv.js"></script>
+<script src="core/trade/confirmation/confirmation.drv.js"></script>
+
+
+<script src="//localhost:8001"></script>
+</body>
+</html>

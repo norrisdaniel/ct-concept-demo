@@ -1,0 +1,139 @@
+.ct-trade-details {
+  display: flex;
+
+  .ct-trade--approved-status,
+  .ct-trade--show-trader-details {
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+
+  .ct-layout__currency-exchange {
+    -webkit-box-flex: 10;
+    flex: 10;
+  }
+}
+
+.ct-trade--approved-status {
+  i {
+    vertical-align: middle;
+  }
+}
+
+.ct-trade--show-trader-details {
+  text-align: center;
+
+  button {
+    padding: 0;
+    min-width: 100%;
+  }
+}
+
+.ct-layout__select-recipient {
+  padding: 20px;
+}
+
+.ct-trade-select {
+  border: 1px solid #e9e9e9;
+  padding: 20px;
+
+  .ct-label {
+    padding-left: 80px;
+    position: relative;
+
+    .ct-select-trader--label {
+      padding: 4px 0;
+    }
+    .ct-trader-avatar {
+      margin-left: -70px;
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border: 0;
+      box-sizing: inherit;
+
+      &.circle {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.ct-select-recipient {
+  padding-left: 80px;
+  position: relative;
+  margin: 40px 0;
+}
+
+.ct-select--wrapper {
+  position: relative;
+  width: 478px;
+  height: 43px;
+  display: block;
+  border: 2px solid rgb(187, 187, 187);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0px);
+  background-color: rgb(255, 255, 255);
+  background-size: 100% 100%;
+
+  .ct-select--arrow-button {
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    min-width: 44px;
+    height: 44px;
+    border: 0 solid rgb(238, 238, 238);
+    background-color: rgb(187, 187, 187);
+    color: white;
+    text-align: center;
+    line-height: 0;
+    cursor: pointer;
+    padding: 0
+  }
+}
+
+.dropdown-content {
+  margin: 0;
+  padding: 0;
+  width: 434px;
+  border: 2px solid rgb(187, 187, 187);
+  padding-right: 44px;
+  list-style: none;
+}
+
+.dropdown-item {
+
+  img {
+    &.circle {
+      border-radius: 50%;
+    }
+    margin-left:10px;
+    width: 29px;
+    height: 29px;
+  }
+  line-height: 45px;
+  height: 45px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(85, 85, 85);
+
+  &.dropdown-item--dark {
+    background-color: rgb(102, 102, 102);
+    color: white;
+  }
+
+  span {
+    margin-left:10px;
+  }
+  &:hover {
+    background-color: #1695CA;
+    color:white;
+  }
+}
+
+
+
+
+
+

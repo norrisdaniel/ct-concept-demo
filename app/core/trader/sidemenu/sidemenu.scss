@@ -1,0 +1,66 @@
+.ct-layout--trader-sidemenu {
+  .ct-trader-title {
+    font-size:16px;
+    line-height: 1;
+    color: #1695CA;
+    padding: 17px 10px;
+    text-shadow: rgb(255, 255, 255) 0 1px 0;
+    margin:23px 0;
+  }
+
+  .ct-trader-menu {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    border-top:1px solid #a6a8ab;
+
+    .ct-trader--item {
+      cursor:pointer;
+      margin-right: 15px;
+      text-shadow: none;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #a6a8ab;
+      }
+
+      &.is-active, &:hover  {
+
+        background-color: #1695CA;
+        a {
+          color: #fff;
+          text-shadow: none;
+
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+
+      a {
+        color: #444;
+        padding: 10px;
+        position: relative;
+        display: block;
+        &::before {
+          content: '\f105';
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 18px;
+          color: #1695CA;
+          width: 18px;
+          height: 18px;
+          display: inline-block;
+          background-color: #e6e7e8;
+          border-radius: 9px;
+          text-align: center;
+          margin-right: 20px;
+          padding-left: 2px;
+          opacity: 0;
+        }
+      }
+
+
+    }
+  }
+}
